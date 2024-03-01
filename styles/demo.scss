@@ -1,0 +1,57 @@
+
+
+$header-bgColor: #ffab73;
+$main-bgColor: #ffb737;
+$section-background: #ddf234;
+$footer-font: 20px;
+
+// nesting with scss
+
+nav{
+    margin-top: 20px;
+    ul {
+        padding: 20px 10px;
+        li{
+            display: inline-block;
+            margin: 0 10px;
+            a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+            a:hover {
+                background-color: black;
+                color: yellow;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+}
+
+
+/* browser reset code */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: $header-bgColor;
+}
+
+main{
+    background-color: $main-bgColor;
+}
+
+section{
+    background-color: $section-background;
+}
+
+footer{
+    font-size: $footer-font;
+}
+
